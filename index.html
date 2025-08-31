@@ -1,0 +1,1126 @@
+
+<!DOCTYPE html>
+<html lang="id">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Negara Tanpa Parlemen: Antara Fiksi Politik dan Kenyataan Sejarah</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #2D3748;
+            --secondary: #4A5568;
+            --accent: #E53E3E;
+            --muted: #718096;
+            --background: #F7FAFC;
+            --surface: #FFFFFF;
+            --border: #E2E8F0;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--background);
+            color: var(--primary);
+        }
+        
+        .serif {
+            font-family: 'Playfair Display', serif;
+        }
+        
+        .toc-fixed {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 280px;
+            height: 100vh;
+            background: var(--surface);
+            border-right: 1px solid var(--border);
+            z-index: 1000;
+            overflow-y: auto;
+            padding: 2rem 1.5rem;
+            box-shadow: 2px 0 10px rgba(0,0,0,0.1);
+        }
+        
+        .main-content {
+            margin-left: 280px;
+            min-height: 100vh;
+        }
+        
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 2rem;
+            align-items: center;
+        }
+        
+        @media (max-width: 768px) {
+            .hero-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        .citation-link {
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: 500;
+            border-bottom: 1px dotted var(--accent);
+        }
+        
+        .citation-link:hover {
+            background-color: rgba(229, 62, 62, 0.1);
+            padding: 0 2px;
+            border-radius: 2px;
+        }
+        
+        .pull-quote {
+            border-left: 4px solid var(--accent);
+            padding-left: 2rem;
+            font-style: italic;
+            font-size: 1.125rem;
+            color: var(--secondary);
+            margin: 2rem 0;
+        }
+        
+        @media (max-width: 1024px) {
+            .toc-fixed {
+                transform: translateX(-100%);
+                transition: transform 0.3s ease;
+            }
+            
+            .toc-fixed.open {
+                transform: translateX(0);
+            }
+            
+            .main-content {
+                margin-left: 0;
+            }
+            
+            #toc-toggle {
+                display: block;
+                position: fixed;
+                top: 1rem;
+                left: 1rem;
+                z-index: 1001;
+                background: var(--surface);
+                border: 1px solid var(--border);
+                border-radius: 4px;
+                padding: 0.5rem;
+                cursor: pointer;
+            }
+        }
+    </style>
+  </head>
+
+  <body>
+    <!-- Toggle button for TOC on mobile -->
+    <button id="toc-toggle" class="hidden lg:hidden p-2 bg-white rounded shadow">
+      <i class="fas fa-bars text-gray-600"></i>
+    </button>
+
+    <!-- Fixed Table of Contents -->
+    <nav class="toc-fixed">
+      <h3 class="serif text-lg font-semibold mb-4 text-gray-800">Daftar Isi</h3>
+      <ul class="space-y-2 text-sm">
+        <li>
+          <a href="#executive-summary" class="block py-1 text-gray-600 hover:text-gray-900 transition-colors">Executive Summary</a>
+        </li>
+        <li>
+          <a href="#political-consequences" class="block py-1 text-gray-600 hover:text-gray-900 transition-colors">Konsekuensi Politik dan Demokrasi</a>
+        </li>
+        <li>
+          <a href="#practical-implications" class="block py-1 text-gray-600 hover:text-gray-900 transition-colors">Implikasi Praktis Fungsi Negara</a>
+        </li>
+        <li>
+          <a href="#alternatives" class="block py-1 text-gray-600 hover:text-gray-900 transition-colors">Alternatif Sistem Pemerintahan</a>
+        </li>
+        <li>
+          <a href="#historical-lessons" class="block py-1 text-gray-600 hover:text-gray-900 transition-colors">Pelajaran dari Sejarah Indonesia</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <!-- Hero Section -->
+      <section class="bg-gradient-to-br from-gray-50 to-gray-100 py-16 px-8">
+        <div class="max-w-6xl mx-auto">
+          <div class="hero-grid">
+            <div>
+              <h1 class="serif text-4xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
+                <em class="text-red-600">Negara Tanpa Parlemen:</em>
+                <br>
+                Antara Fiksi Politik dan Kenyataan Sejarah
+              </h1>
+              <p class="text-xl text-gray-600 leading-relaxed mb-8">
+                Sebuah analisis komprehensif tentang implikasi menghilangkan Dewan Perwakilan Rakyat,
+                dengan mengambil pelajaran dari sejarah politik Indonesia dan alternatif sistem pemerintahan yang pernah dicoba.
+              </p>
+            </div>
+            <div class="relative">
+              <img src="https://kimi-img.moonshot.cn/pub/icon/spinner.svg" alt="Ruang sidang parlemen yang kosong" class="w-full h-80 object-cover rounded-lg shadow-lg" size="medium" aspect="wide" style="photo" query="parliament chamber empty" referrerpolicy="no-referrer" />
+              <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent rounded-lg"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Executive Summary -->
+      <section id="executive-summary" class="py-16 px-8 bg-white">
+        <div class="max-w-4xl mx-auto">
+          <h2 class="serif text-3xl font-bold mb-8 text-gray-900">Executive Summary</h2>
+
+          <div class="bg-red-50 border-l-4 border-red-500 p-6 mb-8 rounded-r-lg">
+            <p class="text-lg font-medium text-red-800">
+              Sebuah negara tanpa Dewan Perwakilan Rakyat (parlemen) secara fundamental akan runtuh sebagai negara demokrasi.
+            </p>
+          </div>
+
+          <div class="grid md:grid-cols-3 gap-6 mb-12">
+            <div class="bg-gray-50 p-6 rounded-lg">
+              <h3 class="font-semibold text-lg mb-3 text-gray-900">Konsentrasi Kekuasaan</h3>
+              <p class="text-gray-600">Hilangnya sistem checks and balances dan prinsip Trias Politica, dengan kekuasaan absolut di tangan eksekutif.</p>
+            </div>
+            <div class="bg-gray-50 p-6 rounded-lg">
+              <h3 class="font-semibold text-lg mb-3 text-gray-900">Demokrasi Kulit Kosong</h3>
+              <p class="text-gray-600">Demokrasi menjadi formalitas tanpa substansi, tampak demokratis namun berisiko otoriter.</p>
+            </div>
+            <div class="bg-gray-50 p-6 rounded-lg">
+              <h3 class="font-semibold text-lg mb-3 text-gray-900">Krisis Konstitusional</h3>
+              <p class="text-gray-600">Paraleksa dalam amandemen UUD 1945 dan ancaman stabilitas politik nasional.</p>
+            </div>
+          </div>
+
+          <div class="prose prose-lg max-w-none">
+            <p>
+              Pertanyaan tentang bagaimana sebuah negara bisa berfungsi tanpa keberadaan Dewan Perwakilan Rakyat (DPR) atau parlemen merupakan sebuah wacana yang menarik, namun penuh dengan implikasi serius terhadap sistem demokrasi dan kestabilan politik. Meskipun terdengar seperti fiksi politik, sejarah Indonesia justru mencatat beberapa periode di mana lembaga legislatif tidak berfungsi secara efektif atau bahkan dibubarkan, memberikan pelajaran berharga tentang konsekuensi dari absennya parlemen yang mandiri.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Political Consequences -->
+      <section id="political-consequences" class="py-16 px-8 bg-gray-50">
+        <div class="max-w-4xl mx-auto">
+          <h2 class="serif text-3xl font-bold mb-12 text-gray-900">Konsekuensi Politik dan Demokrasi Tanpa Parlemen</h2>
+
+          <div class="mb-12">
+            <h3 class="serif text-2xl font-semibold mb-6 text-gray-800">Runtuhnya Sistem Checks and Balances</h3>
+
+            <div class="pull-quote">
+              "Tanpa parlemen, demokrasi hanyalah nama belaka. Kekuasaan akan jatuh ke satu tangan dan yang berlaku bukan lagi supremasi hukum, melainkan kekuasaan absolut."
+              <cite class="block mt-2 text-sm font-normal">— Prof. Jimly Asshiddiqie, Guru Besar Hukum Tata Negara UI</cite>
+            </div>
+
+            <p class="text-gray-700 leading-relaxed mb-6">
+              Sistem checks and balances atau pembagian kekuasaan merupakan prinsip dasar dalam negara demokrasi untuk mencegah terkonsentrasinya kekuasaan di tangan satu orang atau satu kelompok. Parlemen memiliki peran sentral dalam sistem ini sebagai lembaga legislatif yang mengawasi dan menyeimbangkan kekuasaan eksekutif. Jika parlemen dihilangkan, maka sistem ini akan runtuh, membuka jalan bagi dominasi mutlak dari cabang pemerintahan lainnya.
+              <a href="https://www.kompas.id/artikel/en-mungkinkah-negara-tanpa-dpr" class="citation-link" target="_blank">[607]</a>
+            </p>
+
+            <h4 class="text-xl font-semibold mb-4 text-gray-800">Konsentrasi Kekuasaan di Tangan Eksekutif</h4>
+            <p class="text-gray-700 leading-relaxed mb-6">
+              Tanpa adanya parlemen, kekuasaan legislatif secara otomatis akan jatuh ke tangan eksekutif. Dalam sistem demokrasi, DPR memiliki tiga fungsi utama: <strong>legislasi (membuat undang-undang), anggaran (mengesahkan Anggaran Pendapatan dan Belanja Negara/APBN), dan pengawasan (mengawasi kinerja pemerintah)</strong>. Jika DPR dibubarkan, maka ketiga fungsi vital ini akan berada sepenuhnya di bawah kendali presiden. Presiden dapat membuat undang-undang, menentukan anggaran negara, dan mengawasi dirinya sendiri, yang secara praktis berarti tidak ada pengawasan sama sekali.
+            </p>
+          </div>
+
+          <div class="mb-12">
+            <h3 class="serif text-2xl font-semibold mb-6 text-gray-800">Potensi Munculnya Otoritarianisme</h3>
+
+            <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-200 mb-6">
+              <h4 class="font-semibold text-lg mb-3 text-red-600">Demokrasi Menjadi Kulit Kosong</h4>
+              <p class="text-gray-700">
+                Dalam skenario tanpa parlemen, demokrasi berisiko menjadi sebuah <strong>"demokrasi semu" atau "kulit kosong"</strong>. Secara formal, negara tersebut mungkin masih menyebut dirinya sebagai negara demokrasi, bahkan mungkin masih menyelenggarakan pemilu. Namun, tanpa lembaga legislatif yang mandiri, semua itu hanyalah formalitas tanpa substansi.
+                <a href="https://www.kompasiana.com/frans36286/68ac6d29c925c44fac578ed2/jika-dpr-bubar-apa-dampaknya-untuk-indonesia" class="citation-link" target="_blank">[615]</a>
+              </p>
+            </div>
+
+            <p class="text-gray-700 leading-relaxed mb-6">
+              Contoh dari Libya di bawah Muammar Gaddafi di mana parlemen dihapuskan dan digantikan dengan sistem komite rakyat, namun pada kenyataannya kekuasaan tetap terkonsentrasi pada elit tertentu dan rakyat tidak benar-benar memiliki suara, menjadi pelajaran berharga. Demikian pula, pemerintahan Soeharto di Indonesia, yang menggunakan "baju demokrasi" lengkap dengan DPR dan pemilu, namun semuanya berada di bawah kontrol total rezim.
+            </p>
+          </div>
+
+          <div class="bg-yellow-50 border-l-4 border-yellow-400 p-6 rounded-r-lg">
+            <h3 class="font-semibold text-lg mb-3 text-yellow-800">Krisis Konstitusional</h3>
+            <p class="text-yellow-700">
+              Membubarkan DPR di Indonesia akan menimbulkan krisis konstitusional yang serius. DPR memiliki posisi strategis dalam struktur ketatanegaraan Indonesia, sebagaimana diatur dalam UUD 1945. Lebih jauh lagi, DPR merupakan bagian dari Majelis Permusyawaratan Rakyat (MPR), yang memiliki kewenangan tertinggi dalam sistem ketatanegaraan Indonesia. Jika DPR dibubarkan, maka MPR juga akan tidak dapat berfungsi.
+              <a href="https://www.kompasiana.com/ekazaii10/68aa58c0ed641552b87dbf73/isu-pembubaran-dpr-jalan-konstitusional-atau-alternatif" class="citation-link" target="_blank">[562]</a>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Practical Implications -->
+      <section id="practical-implications" class="py-16 px-8 bg-white">
+        <div class="max-w-4xl mx-auto">
+          <h2 class="serif text-3xl font-bold mb-12 text-gray-900">Implikasi Praktis atas Fungsi Legislasi, Anggaran, dan Pengawasan</h2>
+
+          <div class="grid md:grid-cols-3 gap-8 mb-12">
+            <div class="bg-blue-50 p-6 rounded-lg">
+              <div class="text-blue-600 mb-3">
+                <i class="fas fa-gavel text-2xl"></i>
+              </div>
+              <h3 class="font-semibold text-lg mb-3 text-blue-800">Legislasi</h3>
+              <p class="text-blue-700 text-sm">Pembentukan undang-undang sepenuhnya dikuasai eksekutif, berisiko lahirnya hukum yang tidak adil dan tidak demokratis.</p>
+            </div>
+            <div class="bg-green-50 p-6 rounded-lg">
+              <div class="text-green-600 mb-3">
+                <i class="fas fa-dollar-sign text-2xl"></i>
+              </div>
+              <h3 class="font-semibold text-lg mb-3 text-green-800">Anggaran</h3>
+              <p class="text-green-700 text-sm">Pengelolaan keuangan negara tanpa kontrol, meningkatkan risiko korupsi dan alokasi yang tidak transparan.</p>
+            </div>
+            <div class="bg-red-50 p-6 rounded-lg">
+              <div class="text-red-600 mb-3">
+                <i class="fas fa-eye text-2xl"></i>
+              </div>
+              <h3 class="font-semibold text-lg mb-3 text-red-800">Pengawasan</h3>
+              <p class="text-red-700 text-sm">Hilangnya mekanisme pengawasan formal, pemerintah bebas bertindak tanpa akuntabilitas.</p>
+            </div>
+          </div>
+
+          <div class="space-y-8">
+            <div>
+              <h3 class="serif text-2xl font-semibold mb-6 text-gray-800">Fungsi Legislasi</h3>
+              <img src="https://kimi-img.moonshot.cn/pub/icon/spinner.svg" alt="Perdebatan legislasi di parlemen" class="w-full h-64 object-cover rounded-lg mb-6" size="medium" aspect="wide" style="photo" query="parliament legislative debate" referrerpolicy="no-referrer" />
+
+              <p class="text-gray-700 leading-relaxed mb-4">
+                Fungsi legislasi, yaitu pembentukan undang-undang, adalah kewenangan utama parlemen. Tanpa parlemen, proses pembuatan hukum akan berubah total. Dalam sistem demokrasi, undang-undang dibentuk melalui proses yang melibatkan parlemen dan eksekutif. Parlemen memiliki hak inisiatif untuk mengusulkan undang-undang (<em>right of legislative initiative</em>), dan setiap rancangan undang-undang (RUU) harus dibahas dan disetujui oleh kedua belah pihak.
+                <a href="https://usindo.org/briefs/the-march-of-democracy-can-the-dpr-be-more-effective/" class="citation-link" target="_blank">[608]</a>
+              </p>
+
+              <div class="pull-quote">
+                "Sejarah Indonesia pada masa Orde Baru menunjukkan bagaimana parlemen hanya menjadi 'cap rubber' (stempel karet) untuk kebijakan yang sudah ditetapkan oleh Soeharto."
+                <cite class="block mt-2 text-sm font-normal">— Analisis sejarah parlemen Indonesia</cite>
+              </div>
+            </div>
+
+            <div>
+              <h3 class="serif text-2xl font-semibold mb-6 text-gray-800">Fungsi Anggaran (APBN)</h3>
+              <p class="text-gray-700 leading-relaxed mb-4">
+                Pengelolaan keuangan negara adalah urusan yang sangat krusial. Parlemen memiliki peran sentral dalam mengesahkan anggaran negara (APBN) untuk memastikan bahwa alokasi dana sesuai dengan prioritas nasional dan kepentingan rakyat. Tanpa parlemen, pengelolaan anggaran menjadi tidak terkontrol.
+              </p>
+
+              <div class="bg-red-100 border border-red-200 p-6 rounded-lg mb-6">
+                <h4 class="font-semibold mb-3 text-red-800">Risiko Korupsi, Kolusi, dan Nepotisme</h4>
+                <p class="text-red-700 text-sm">
+                  Dengan kendali penuh atas anggaran, presiden dan para menterinya dapat dengan mudah mengalokasikan dana untuk proyek-proyek yang tidak jelas manfaatnya, atau bahkan untuk kepentingan pribadi, keluarga, atau kroninya. Sejarah Orde Baru penuh dengan contoh bagaimana posisi-posisi kekuasaan dan kekayaan didistribusikan di antara keluarga dan teman-teman dekat Soeharto.
+                  <a href="https://www.geopoliticalmonitor.com/indonesia-in-the-shadow-of-suhartos-legacy-4685/" class="citation-link" target="_blank">[622]</a>
+                </p>
+              </div>
+            </div>
+
+            <div>
+              <h3 class="serif text-2xl font-semibold mb-6 text-gray-800">Fungsi Pengawasan</h3>
+              <p class="text-gray-700 leading-relaxed mb-4">
+                Pengawasan terhadap kinerja pemerintah adalah fungsi vital parlemen untuk menjamin akuntabilitas. Tanpa parlemen, mekanisme pengawasan formal terhadap eksekutif akan hilang, dan pemerintah akan bebas bertindak tanpa takut dikritik atau diminta pertanggungjawabannya.
+              </p>
+
+              <p class="text-gray-700 leading-relaxed">
+                Meskipun media dan masyarakat sipil dapat menjalankan fungsi kontrol sosial, namun peran mereka terbatas. Mereka tidak memiliki legitimasi hukum yang kuat untuk membatasi kebijakan pemerintah. Tanpa parlemen yang memiliki kewenangan hukum untuk menginvestigasi, memanggil pejabat, dan bahkan mengusulkan pemberhentian menteri, maka tekanan dari media dan masyarakat sipil sering kali tidak akan berdampak signifikan.
+                <a href="https://www.kompasiana.com/frans36286/68ac6d29c925c44fac578ed2/jika-dpr-bubar-apa-dampaknya-untuk-indonesia" class="citation-link" target="_blank">[615]</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Alternatives -->
+      <section id="alternatives" class="py-16 px-8 bg-gray-50">
+        <div class="max-w-4xl mx-auto">
+          <h2 class="serif text-3xl font-bold mb-12 text-gray-900">Alternatif Sistem Pemerintahan Tanpa Parlemen</h2>
+
+          <div class="space-y-12">
+            <div>
+              <h3 class="serif text-2xl font-semibold mb-6 text-gray-800">Sistem Demokrasi Langsung</h3>
+
+              <div class="grid md:grid-cols-2 gap-8 mb-6">
+                <div>
+                  <h4 class="font-semibold text-lg mb-3 text-gray-800">Model Referendum dan Inisiatif Rakyat</h4>
+                  <p class="text-gray-700 leading-relaxed mb-4">
+                    Dalam sistem ini, keputusan-keputusan penting, seperti pengesahan undang-undang atau anggaran, tidak diambil oleh parlemen, melainkan oleh seluruh warga negara melalui pemungutan suara. Model ini memang terdengar sangat demokratis karena memberikan kekuasaan langsung kepada rakyat.
+                  </p>
+                  <p class="text-gray-700 leading-relaxed">
+                    Namun, dalam praktiknya, model ini sangat sulit diimplementasikan, terutama di negara-negara yang besar dan beragam seperti Indonesia. Bayangkan jika setiap undang-undang harus diputuskan melalui referendum nasional. Proses ini akan sangat mahal, memakan waktu lama, dan rentan terhadap kekacauan.
+                  </p>
+                </div>
+                <div>
+                  <img src="https://kimi-img.moonshot.cn/pub/icon/spinner.svg" alt="Proses referendum demokrasi langsung di Swiss" class="w-full h-48 object-cover rounded-lg" size="medium" aspect="wide" style="photo" query="Swiss direct democracy referendum" referrerpolicy="no-referrer" />
+                </div>
+              </div>
+
+              <div class="bg-blue-50 p-6 rounded-lg mb-6">
+                <h4 class="font-semibold text-lg mb-3 text-blue-800">Studi Kasus: Swiss</h4>
+                <p class="text-blue-700">
+                  Swiss adalah salah satu negara yang paling sukses menerapkan sistem demokrasi langsung. Di Swiss, rakyat memiliki hak untuk meminta referendum terhadap segala keputusan pemerintah. Namun, yang perlu digarisbawahi adalah bahwa Swiss tetap memiliki parlemen (Federal Assembly) yang berfungsi sebagai lembaga legislasi. Demokrasi langsung di Swiss dilakukan secara komplementer dengan demokrasi perwakilan, bukan sebagai pengganti sistem perwakilan.
+                  <a href="https://www.kompasiana.com/frans36286/68ac6d29c925c44fac578ed2/jika-dpr-bubar-apa-dampaknya-untuk-indonesia" class="citation-link" target="_blank">[292]</a>
+                </p>
+              </div>
+
+              <div class="bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded-r">
+                <p class="text-yellow-800">
+                  <strong>Keterbatasan:</strong> Pemilu di Indonesia tahun 2019 saja memerlukan anggaran yang mencapai 25 triliun rupiah. Jika setiap keputusan penting harus dilakukan melalui referendum, maka biaya yang dikeluarkan akan sangat besar dan tidak sebanding dengan manfaatnya.
+                </p>
+              </div>
+            </div>
+
+            <div>
+              <h3 class="serif text-2xl font-semibold mb-6 text-gray-800">Model Dewan-Dewan Lokal atau Komite Rakyat</h3>
+
+              <div class="bg-red-50 p-6 rounded-lg mb-6">
+                <h4 class="font-semibold text-lg mb-3 text-red-800">Studi Kasus: Sistem "Jamahiriya" di Libya</h4>
+                <p class="text-red-700">
+                  Muammar Gaddafi di Libya pernah mencoba model ini dengan sistem "Jamahiriya" (negara kaum massa). Dalam sistem ini, parlemen dihapuskan dan digantikan dengan sistem komite rakyat. Namun, hasilnya adalah kekuasaan tetap terkonsentrasi pada elit tertentu (yaitu Gaddafi dan kelompoknya) dan rakyat tidak benar-benar memiliki suara.
+                  <a href="https://www.kompasiana.com/frans36286/68ac6d29c925c44fac578ed2/jika-dpr-bubar-apa-dampaknya-untuk-indonesia" class="citation-link" target="_blank">[615]</a>
+                </p>
+              </div>
+
+              <p class="text-gray-700 leading-relaxed mb-6">
+                Kegagalan model Libya menunjukkan bahwa teori di balik sistem dewan-dewan lokal sering kali tidak sesuai dengan praktiknya. Tanpa mekanisme demokrasi yang kuat dan independen, sistem ini mudah disalahgunakan oleh elit untuk mengkonsolidasikan kekuasaan. Alih-alih memberdayakan rakyat, sistem ini justru dapat menciptakan birokrasi yang lebih kompleks dan rentan terhadap korupsi di setiap tingkatannya.
+              </p>
+            </div>
+
+            <div>
+              <h3 class="serif text-2xl font-semibold mb-6 text-gray-800">Sistem Partai Tunggal</h3>
+
+              <div class="pull-quote">
+                "Soeharto dengan kekuasaannya yang luar biasa besar bisa mengatur semua lembaga negara untuk 'manut' atau tunduk pada kehendaknya."
+                <cite class="block mt-2 text-sm font-normal">— Pengamat politik tentang era Orde Baru</cite>
+              </div>
+
+              <p class="text-gray-700 leading-relaxed mb-6">
+                Alternatif yang paling sering terjadi dalam praktik ketika parlemen dihilangkan atau dilemahkan adalah sistem partai tunggal, di mana satu partai politik mendominasi seluruh sistem pemerintahan. Era Orde Baru di bawah kepemimpinan Soeharto adalah contoh klasik dari sistem ini. Meskipun secara formal ada tiga partai (Golkar, PPP, dan PDI), namun dalam praktiknya Golkar mendominasi parlemen secara mutlak.
+                <a href="https://library.fes.de/pdf-files/iez/01361004.pdf" class="citation-link" target="_blank">[616]</a>
+              </p>
+
+              <div class="bg-gray-100 p-6 rounded-lg">
+                <h4 class="font-semibold text-lg mb-3 text-gray-800">DPR sebagai "Rubber Stamp"</h4>
+                <p class="text-gray-700">
+                  Dalam sistem partai tunggal, parlemen tidak berfungsi sebagai lembaga yang independen. Sebaliknya, parlemen hanya menjadi "rubber stamp" atau stempel karet untuk setiap kebijakan yang diinginkan oleh eksekutif. Parlemen tidak memiliki kekuatan untuk menolak atau merevisi RUU yang diajukan oleh presiden. Fungsinya hanyalah untuk memberikan legitimasi formal pada keputusan yang sudah diambil oleh presiden.
+                  <a href="https://www.cambridge.org/core/books/indonesian-parliament-and-democratization/rubber-stamp-the-role-of-the-parliament-during-the-last-year-of-the-presidency-of-suharto/1E661F2E0DCD6DDD725D2E3B3B47E5F2" class="citation-link" target="_blank">[621]</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Historical Lessons -->
+      <section id="historical-lessons" class="py-16 px-8 bg-white">
+        <div class="max-w-4xl mx-auto">
+          <h2 class="serif text-3xl font-bold mb-12 text-gray-900">Pelajaran dari Sejarah: Indonesia di Era Tanpa Parlemen Fungsional</h2>
+
+          <div class="mb-12">
+            <img src="https://kimi-img.moonshot.cn/pub/icon/spinner.svg" alt="Soeharto during New Order era" class="w-full h-64 object-cover rounded-lg mb-8" size="medium" aspect="wide" style="photo" query="Soeharto era Orde Baru" referrerpolicy="no-referrer" />
+          </div>
+
+          <div class="overflow-x-auto mb-12">
+            <table class="w-full bg-white border border-gray-200 rounded-lg shadow-sm">
+              <thead class="bg-gray-50">
+                <tr>
+                  <th class="px-6 py-4 text-left text-sm font-semibold text-gray-900 border-b">Aspek</th>
+                  <th class="px-6 py-4 text-left text-sm font-semibold text-gray-900 border-b">Masa Demokrasi Terpimpin (1957-1965)</th>
+                  <th class="px-6 py-4 text-left text-sm font-semibold text-gray-900 border-b">Masa Orde Baru (1966-1998)</th>
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-gray-200">
+                <tr>
+                  <td class="px-6 py-4 text-sm font-medium text-gray-900">Status Parlemen</td>
+                  <td class="px-6 py-4 text-sm text-gray-700">Dibubarkan dan digantikan dengan lembaga yang anggotanya ditunjuk (DPR-GR, MPRS)</td>
+                  <td class="px-6 py-4 text-sm text-gray-700">Tetap ada secara formal, tetapi dikuasai sepenuhnya oleh satu partai (Golkar)</td>
+                </tr>
+                <tr>
+                  <td class="px-6 py-4 text-sm font-medium text-gray-900">Kekuasaan Presiden</td>
+                  <td class="px-6 py-4 text-sm text-gray-700">Sangat kuat dan tidak terbatas, mendapat mandat seumur hidup dari MPRS</td>
+                  <td class="px-6 py-4 text-sm text-gray-700">Absolut, mengontrol seluruh lembaga negara termasuk parlemen dan yudikatif</td>
+                </tr>
+                <tr>
+                  <td class="px-6 py-4 text-sm font-medium text-gray-900">Peran Parlemen</td>
+                  <td class="px-6 py-4 text-sm text-gray-700">Hanya sebagai alat legitimasi bagi kebijakan presiden, tanpa fungsi pengawasan</td>
+                  <td class="px-6 py-4 text-sm text-gray-700">Sebagai "rubber stamp" atau stempel karet untuk menyetujui segala kebijakan presiden</td>
+                </tr>
+                <tr>
+                  <td class="px-6 py-4 text-sm font-medium text-gray-900">Pemilu</td>
+                  <td class="px-6 py-4 text-sm text-gray-700">Tidak ada pemilu selama periode ini</td>
+                  <td class="px-6 py-4 text-sm text-gray-700">Ada, tetapi dijadikan alat untuk melegitimasi rezim, bukan untuk memilih wakil rakyat yang independen</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="space-y-12">
+            <div>
+              <h3 class="serif text-2xl font-semibold mb-6 text-gray-800">Masa Demokrasi Terpimpin (1957-1965)</h3>
+
+              <p class="text-gray-700 leading-relaxed mb-6">
+                Masa Demokrasi Terpimpin di bawah Presiden Soekarno ditandai dengan berakhirnya sistem demokrasi parlementer dan konsolidasi kekuasaan di tangan presiden. Setelah pemilu demokratis tahun 1955, Indonesia mengalami krisis politik kronis yang ditandai oleh ketidakstabilan kabinet dan perdebatan sengit antar partai. Didukung oleh militer, Soekarno memberlakukan hukum darurat pada tahun 1957 dan akhirnya membubarkan parlemen yang terpilih secara demokratis tersebut.
+                <a href="https://library.fes.de/pdf-files/iez/01361004.pdf" class="citation-link" target="_blank">[603]</a>
+              </p>
+
+              <div class="bg-red-50 p-6 rounded-lg mb-6">
+                <h4 class="font-semibold text-lg mb-3 text-red-800">Pembekuan DPR dan Konsolidasi Kekuasaan</h4>
+                <p class="text-red-700">
+                  Pada tahun 1960, Soekarno secara resmi membekukan DPR yang ada karena menolak untuk mengesahkan anggaran negara. Dengan hilangnya parlemen yang mandiri, kekuasaan Soekarno menjadi sangat kuat. Pada tahun 1963, MPRS bahkan memberikan mandat seumur hidup kepada Soekarno sebagai presiden, sebuah tindakan yang jelas melanggar konstitusi.
+                  <a href="https://library.fes.de/pdf-files/iez/01361004.pdf" class="citation-link" target="_blank">[634]</a>
+                </p>
+              </div>
+            </div>
+
+            <div>
+              <h3 class="serif text-2xl font-semibold mb-6 text-gray-800">Masa Orde Baru (1966-1998)</h3>
+
+              <p class="text-gray-700 leading-relaxed mb-6">
+                Era Orde Baru di bawah Presiden Soeharto adalah contoh klasik dari sistem di mana parlemen secara formal ada, tetapi secara fungsional tidak berfungsi sebagai lembaga pengawas dan penyeimbang. Meskipun secara formal ada tiga partai politik (Golkar, PPP, dan PDI), namun dalam praktiknya Golkar mendominasi parlemen secara mutlak.
+                <a href="https://library.fes.de/pdf-files/iez/01361004.pdf" class="citation-link" target="_blank">[616]</a>
+              </p>
+
+              <div class="bg-gray-100 p-6 rounded-lg mb-6">
+                <h4 class="font-semibold text-lg mb-3 text-gray-800">Kontrol Total terhadap Lembaga Negara</h4>
+                <p class="text-gray-700">
+                  Soeharto memiliki kontrol penuh atas partai-partai politik, termasuk dalam menentukan ketua umum partai, baik di tingkat pusat maupun daerah. Anggota DPR dari Golkar sebagian besar adalah pegawai negeri, yang membuat mereka sangat tergantung pada kehendak pemerintah. Dalam sistem ini, parlemen (DPR) tidak berfungsi sebagai lembaga pengawas dan penyeimbang kekuasaan, melainkan hanya sebagai alat legitimasi bagi kebijakan Soeharto.
+                </p>
+              </div>
+            </div>
+
+            <div>
+              <h3 class="serif text-2xl font-semibold mb-6 text-gray-800">Masa Reformasi (1998-Sekarang)</h3>
+
+              <p class="text-gray-700 leading-relaxed mb-6">
+                Jatuhnya Soeharto pada tahun 1998 menandak dimulainya era Reformasi, yang ditandai oleh upaya untuk membangun kembali sistem demokrasi dan memperkuat peran lembaga-lembaga negara, termasuk parlemen. Salah satu tonggak penting dalam era Reformasi adalah perubahan konstitusi. Amandemen UUD 1945 dilakukan untuk memperkuat sistem checks and balances.
+              </p>
+
+              <div class="bg-green-50 p-6 rounded-lg">
+                <h4 class="font-semibold text-lg mb-3 text-green-800">Tantangan Membangun Parlemen Efektif</h4>
+                <p class="text-green-700">
+                  Meskipun telah mengalami reformasi, DPR masih menghadapi banyak tantangan. Masalah seperti korupsi, kualitas anggota yang tidak merata, dan masih lemahnya fungsi pengawasan masih sering menjadi sorotan publik. Membangun parlemen yang benar-benar efektif, representatif, dan bersih bukanlah proses yang instan.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="py-12 px-8 bg-gray-900 text-white">
+        <div class="max-w-4xl mx-auto text-center">
+          <p class="text-gray-400 mb-4">
+            Analisis ini didasarkan pada studi sejarah ketatanegaraan Indonesia dan prinsip-prinsip demokrasi konstitusional.
+          </p>
+          <div class="text-sm text-gray-500">
+            Referensi utama:
+            <a href="https://www.kompasiana.com/frans36286/68ac6d29c925c44fac578ed2/jika-dpr-bubar-apa-dampaknya-untuk-indonesia" class="citation-link text-gray-400" target="_blank">Kompasiana</a>,
+            <a href="https://www.kompas.id/artikel/en-mungkinkah-negara-tanpa-dpr" class="citation-link text-gray-400" target="_blank">Kompas.id</a>,
+            <a href="https://library.fes.de/pdf-files/iez/01361004.pdf" class="citation-link text-gray-400" target="_blank">FES Library</a>
+          </div>
+        </div>
+      </footer>
+    </main>
+
+    <script>
+        // Toggle TOC on mobile
+        const tocToggle = document.getElementById('toc-toggle');
+        const tocFixed = document.querySelector('.toc-fixed');
+        
+        tocToggle.addEventListener('click', () => {
+            tocFixed.classList.toggle('open');
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Close mobile TOC when clicking outside
+        document.addEventListener('click', function(event) {
+            if (window.innerWidth <= 1024) {
+                const isToc = tocFixed.contains(event.target);
+                const isToggle = tocToggle.contains(event.target);
+                
+                if (!isToc && !isToggle && tocFixed.classList.contains('open')) {
+                    tocFixed.classList.remove('open');
+                }
+            }
+        });
+
+        // Handle window resize
+        window.addEventListener('resize', function() {
+            if (window.innerWidth > 1024) {
+                // Reset state when switching to desktop
+                tocFixed.classList.remove('open');
+            }
+        });
+    </script>
+  </body>
+
+</html>
+<!DOCTYPE html><html lang="id"><head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Negara Tanpa Parlemen: Antara Fiksi Politik dan Kenyataan Sejarah</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+    <style>
+        :root {
+            --primary: #2D3748;
+            --secondary: #4A5568;
+            --accent: #E53E3E;
+            --muted: #718096;
+            --background: #F7FAFC;
+            --surface: #FFFFFF;
+            --border: #E2E8F0;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--background);
+            color: var(--primary);
+        }
+        
+        .serif {
+            font-family: 'Playfair Display', serif;
+        }
+        
+        .toc-fixed {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 280px;
+            height: 100vh;
+            background: var(--surface);
+            border-right: 1px solid var(--border);
+            z-index: 1000;
+            overflow-y: auto;
+            padding: 2rem 1.5rem;
+            box-shadow: 2px 0 10px rgba(0,0,0,0.1);
+        }
+        
+        .main-content {
+            margin-left: 280px;
+            min-height: 100vh;
+        }
+        
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 2rem;
+            align-items: center;
+        }
+        
+        @media (max-width: 768px) {
+            .hero-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        .citation-link {
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: 500;
+            border-bottom: 1px dotted var(--accent);
+        }
+        
+        .citation-link:hover {
+            background-color: rgba(229, 62, 62, 0.1);
+            padding: 0 2px;
+            border-radius: 2px;
+        }
+        
+        .pull-quote {
+            border-left: 4px solid var(--accent);
+            padding-left: 2rem;
+            font-style: italic;
+            font-size: 1.125rem;
+            color: var(--secondary);
+            margin: 2rem 0;
+        }
+        
+        @media (max-width: 1024px) {
+            .toc-fixed {
+                transform: translateX(-100%);
+                transition: transform 0.3s ease;
+            }
+            
+            .toc-fixed.open {
+                transform: translateX(0);
+            }
+            
+            .main-content {
+                margin-left: 0;
+            }
+            
+            #toc-toggle {
+                display: block;
+                position: fixed;
+                top: 1rem;
+                left: 1rem;
+                z-index: 1001;
+                background: var(--surface);
+                border: 1px solid var(--border);
+                border-radius: 4px;
+                padding: 0.5rem;
+                cursor: pointer;
+            }
+        }
+    </style>
+  </head>
+
+  <body>
+    <!-- Toggle button for TOC on mobile -->
+    <button id="toc-toggle" class="hidden lg:hidden p-2 bg-white rounded shadow">
+      <i class="fas fa-bars text-gray-600"></i>
+    </button>
+
+    <!-- Fixed Table of Contents -->
+    <nav class="toc-fixed">
+      <h3 class="serif text-lg font-semibold mb-4 text-gray-800">Daftar Isi</h3>
+      <ul class="space-y-2 text-sm">
+        <li>
+          <a href="#executive-summary" class="block py-1 text-gray-600 hover:text-gray-900 transition-colors">Executive Summary</a>
+        </li>
+        <li>
+          <a href="#political-consequences" class="block py-1 text-gray-600 hover:text-gray-900 transition-colors">Konsekuensi Politik dan Demokrasi</a>
+        </li>
+        <li>
+          <a href="#practical-implications" class="block py-1 text-gray-600 hover:text-gray-900 transition-colors">Implikasi Praktis Fungsi Negara</a>
+        </li>
+        <li>
+          <a href="#alternatives" class="block py-1 text-gray-600 hover:text-gray-900 transition-colors">Alternatif Sistem Pemerintahan</a>
+        </li>
+        <li>
+          <a href="#historical-lessons" class="block py-1 text-gray-600 hover:text-gray-900 transition-colors">Pelajaran dari Sejarah Indonesia</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <!-- Hero Section -->
+      <section class="bg-gradient-to-br from-gray-50 to-gray-100 py-16 px-8">
+        <div class="max-w-6xl mx-auto">
+          <div class="hero-grid">
+            <div>
+              <h1 class="serif text-4xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
+                <em class="text-red-600">Negara Tanpa Parlemen:</em>
+                <br/>
+                Antara Fiksi Politik dan Kenyataan Sejarah
+              </h1>
+              <p class="text-xl text-gray-600 leading-relaxed mb-8">
+                Sebuah analisis komprehensif tentang implikasi menghilangkan Dewan Perwakilan Rakyat,
+                dengan mengambil pelajaran dari sejarah politik Indonesia dan alternatif sistem pemerintahan yang pernah dicoba.
+              </p>
+            </div>
+            <div class="relative">
+              <img src="https://kimi-web-img.moonshot.cn/img/www.parliament.nz/38067dd65428c7c36ee12cde82360f1ca14acdc1.jpg" alt="Ruang sidang parlemen yang kosong" class="w-full h-80 object-cover rounded-lg shadow-lg" size="medium" aspect="wide" style="photo" query="parliament chamber empty" referrerpolicy="no-referrer" data-modified="1" data-score="0.00"/>
+              <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent rounded-lg"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Executive Summary -->
+      <section id="executive-summary" class="py-16 px-8 bg-white">
+        <div class="max-w-4xl mx-auto">
+          <h2 class="serif text-3xl font-bold mb-8 text-gray-900">Executive Summary</h2>
+
+          <div class="bg-red-50 border-l-4 border-red-500 p-6 mb-8 rounded-r-lg">
+            <p class="text-lg font-medium text-red-800">
+              Sebuah negara tanpa Dewan Perwakilan Rakyat (parlemen) secara fundamental akan runtuh sebagai negara demokrasi.
+            </p>
+          </div>
+
+          <div class="grid md:grid-cols-3 gap-6 mb-12">
+            <div class="bg-gray-50 p-6 rounded-lg">
+              <h3 class="font-semibold text-lg mb-3 text-gray-900">Konsentrasi Kekuasaan</h3>
+              <p class="text-gray-600">Hilangnya sistem checks and balances dan prinsip Trias Politica, dengan kekuasaan absolut di tangan eksekutif.</p>
+            </div>
+            <div class="bg-gray-50 p-6 rounded-lg">
+              <h3 class="font-semibold text-lg mb-3 text-gray-900">Demokrasi Kulit Kosong</h3>
+              <p class="text-gray-600">Demokrasi menjadi formalitas tanpa substansi, tampak demokratis namun berisiko otoriter.</p>
+            </div>
+            <div class="bg-gray-50 p-6 rounded-lg">
+              <h3 class="font-semibold text-lg mb-3 text-gray-900">Krisis Konstitusional</h3>
+              <p class="text-gray-600">Paraleksa dalam amandemen UUD 1945 dan ancaman stabilitas politik nasional.</p>
+            </div>
+          </div>
+
+          <div class="prose prose-lg max-w-none">
+            <p>
+              Pertanyaan tentang bagaimana sebuah negara bisa berfungsi tanpa keberadaan Dewan Perwakilan Rakyat (DPR) atau parlemen merupakan sebuah wacana yang menarik, namun penuh dengan implikasi serius terhadap sistem demokrasi dan kestabilan politik. Meskipun terdengar seperti fiksi politik, sejarah Indonesia justru mencatat beberapa periode di mana lembaga legislatif tidak berfungsi secara efektif atau bahkan dibubarkan, memberikan pelajaran berharga tentang konsekuensi dari absennya parlemen yang mandiri.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Political Consequences -->
+      <section id="political-consequences" class="py-16 px-8 bg-gray-50">
+        <div class="max-w-4xl mx-auto">
+          <h2 class="serif text-3xl font-bold mb-12 text-gray-900">Konsekuensi Politik dan Demokrasi Tanpa Parlemen</h2>
+
+          <div class="mb-12">
+            <h3 class="serif text-2xl font-semibold mb-6 text-gray-800">Runtuhnya Sistem Checks and Balances</h3>
+
+            <div class="pull-quote">
+              &#34;Tanpa parlemen, demokrasi hanyalah nama belaka. Kekuasaan akan jatuh ke satu tangan dan yang berlaku bukan lagi supremasi hukum, melainkan kekuasaan absolut.&#34;
+              <cite class="block mt-2 text-sm font-normal">— Prof. Jimly Asshiddiqie, Guru Besar Hukum Tata Negara UI</cite>
+            </div>
+
+            <p class="text-gray-700 leading-relaxed mb-6">
+              Sistem checks and balances atau pembagian kekuasaan merupakan prinsip dasar dalam negara demokrasi untuk mencegah terkonsentrasinya kekuasaan di tangan satu orang atau satu kelompok. Parlemen memiliki peran sentral dalam sistem ini sebagai lembaga legislatif yang mengawasi dan menyeimbangkan kekuasaan eksekutif. Jika parlemen dihilangkan, maka sistem ini akan runtuh, membuka jalan bagi dominasi mutlak dari cabang pemerintahan lainnya.
+              <a href="https://www.kompas.id/artikel/en-mungkinkah-negara-tanpa-dpr" class="citation-link" target="_blank">[607]</a>
+            </p>
+
+            <h4 class="text-xl font-semibold mb-4 text-gray-800">Konsentrasi Kekuasaan di Tangan Eksekutif</h4>
+            <p class="text-gray-700 leading-relaxed mb-6">
+              Tanpa adanya parlemen, kekuasaan legislatif secara otomatis akan jatuh ke tangan eksekutif. Dalam sistem demokrasi, DPR memiliki tiga fungsi utama: <strong>legislasi (membuat undang-undang), anggaran (mengesahkan Anggaran Pendapatan dan Belanja Negara/APBN), dan pengawasan (mengawasi kinerja pemerintah)</strong>. Jika DPR dibubarkan, maka ketiga fungsi vital ini akan berada sepenuhnya di bawah kendali presiden. Presiden dapat membuat undang-undang, menentukan anggaran negara, dan mengawasi dirinya sendiri, yang secara praktis berarti tidak ada pengawasan sama sekali.
+            </p>
+          </div>
+
+          <div class="mb-12">
+            <h3 class="serif text-2xl font-semibold mb-6 text-gray-800">Potensi Munculnya Otoritarianisme</h3>
+
+            <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-200 mb-6">
+              <h4 class="font-semibold text-lg mb-3 text-red-600">Demokrasi Menjadi Kulit Kosong</h4>
+              <p class="text-gray-700">
+                Dalam skenario tanpa parlemen, demokrasi berisiko menjadi sebuah <strong>&#34;demokrasi semu&#34; atau &#34;kulit kosong&#34;</strong>. Secara formal, negara tersebut mungkin masih menyebut dirinya sebagai negara demokrasi, bahkan mungkin masih menyelenggarakan pemilu. Namun, tanpa lembaga legislatif yang mandiri, semua itu hanyalah formalitas tanpa substansi.
+                <a href="https://www.kompasiana.com/frans36286/68ac6d29c925c44fac578ed2/jika-dpr-bubar-apa-dampaknya-untuk-indonesia" class="citation-link" target="_blank">[615]</a>
+              </p>
+            </div>
+
+            <p class="text-gray-700 leading-relaxed mb-6">
+              Contoh dari Libya di bawah Muammar Gaddafi di mana parlemen dihapuskan dan digantikan dengan sistem komite rakyat, namun pada kenyataannya kekuasaan tetap terkonsentrasi pada elit tertentu dan rakyat tidak benar-benar memiliki suara, menjadi pelajaran berharga. Demikian pula, pemerintahan Soeharto di Indonesia, yang menggunakan &#34;baju demokrasi&#34; lengkap dengan DPR dan pemilu, namun semuanya berada di bawah kontrol total rezim.
+            </p>
+          </div>
+
+          <div class="bg-yellow-50 border-l-4 border-yellow-400 p-6 rounded-r-lg">
+            <h3 class="font-semibold text-lg mb-3 text-yellow-800">Krisis Konstitusional</h3>
+            <p class="text-yellow-700">
+              Membubarkan DPR di Indonesia akan menimbulkan krisis konstitusional yang serius. DPR memiliki posisi strategis dalam struktur ketatanegaraan Indonesia, sebagaimana diatur dalam UUD 1945. Lebih jauh lagi, DPR merupakan bagian dari Majelis Permusyawaratan Rakyat (MPR), yang memiliki kewenangan tertinggi dalam sistem ketatanegaraan Indonesia. Jika DPR dibubarkan, maka MPR juga akan tidak dapat berfungsi.
+              <a href="https://www.kompasiana.com/ekazaii10/68aa58c0ed641552b87dbf73/isu-pembubaran-dpr-jalan-konstitusional-atau-alternatif" class="citation-link" target="_blank">[562]</a>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Practical Implications -->
+      <section id="practical-implications" class="py-16 px-8 bg-white">
+        <div class="max-w-4xl mx-auto">
+          <h2 class="serif text-3xl font-bold mb-12 text-gray-900">Implikasi Praktis atas Fungsi Legislasi, Anggaran, dan Pengawasan</h2>
+
+          <div class="grid md:grid-cols-3 gap-8 mb-12">
+            <div class="bg-blue-50 p-6 rounded-lg">
+              <div class="text-blue-600 mb-3">
+                <i class="fas fa-gavel text-2xl"></i>
+              </div>
+              <h3 class="font-semibold text-lg mb-3 text-blue-800">Legislasi</h3>
+              <p class="text-blue-700 text-sm">Pembentukan undang-undang sepenuhnya dikuasai eksekutif, berisiko lahirnya hukum yang tidak adil dan tidak demokratis.</p>
+            </div>
+            <div class="bg-green-50 p-6 rounded-lg">
+              <div class="text-green-600 mb-3">
+                <i class="fas fa-dollar-sign text-2xl"></i>
+              </div>
+              <h3 class="font-semibold text-lg mb-3 text-green-800">Anggaran</h3>
+              <p class="text-green-700 text-sm">Pengelolaan keuangan negara tanpa kontrol, meningkatkan risiko korupsi dan alokasi yang tidak transparan.</p>
+            </div>
+            <div class="bg-red-50 p-6 rounded-lg">
+              <div class="text-red-600 mb-3">
+                <i class="fas fa-eye text-2xl"></i>
+              </div>
+              <h3 class="font-semibold text-lg mb-3 text-red-800">Pengawasan</h3>
+              <p class="text-red-700 text-sm">Hilangnya mekanisme pengawasan formal, pemerintah bebas bertindak tanpa akuntabilitas.</p>
+            </div>
+          </div>
+
+          <div class="space-y-8">
+            <div>
+              <h3 class="serif text-2xl font-semibold mb-6 text-gray-800">Fungsi Legislasi</h3>
+              <img src="https://kimi-web-img.moonshot.cn/img/etvbharatimages.akamaized.net/d28b0cccf536326d52c3bfb6731f4d13d1a25dfd.jpg" alt="Perdebatan legislasi di parlemen" class="w-full h-64 object-cover rounded-lg mb-6" size="medium" aspect="wide" style="photo" query="parliament legislative debate" referrerpolicy="no-referrer" data-modified="1" data-score="0.00"/>
+
+              <p class="text-gray-700 leading-relaxed mb-4">
+                Fungsi legislasi, yaitu pembentukan undang-undang, adalah kewenangan utama parlemen. Tanpa parlemen, proses pembuatan hukum akan berubah total. Dalam sistem demokrasi, undang-undang dibentuk melalui proses yang melibatkan parlemen dan eksekutif. Parlemen memiliki hak inisiatif untuk mengusulkan undang-undang (<em>right of legislative initiative</em>), dan setiap rancangan undang-undang (RUU) harus dibahas dan disetujui oleh kedua belah pihak.
+                <a href="https://usindo.org/briefs/the-march-of-democracy-can-the-dpr-be-more-effective/" class="citation-link" target="_blank">[608]</a>
+              </p>
+
+              <div class="pull-quote">
+                &#34;Sejarah Indonesia pada masa Orde Baru menunjukkan bagaimana parlemen hanya menjadi &#39;cap rubber&#39; (stempel karet) untuk kebijakan yang sudah ditetapkan oleh Soeharto.&#34;
+                <cite class="block mt-2 text-sm font-normal">— Analisis sejarah parlemen Indonesia</cite>
+              </div>
+            </div>
+
+            <div>
+              <h3 class="serif text-2xl font-semibold mb-6 text-gray-800">Fungsi Anggaran (APBN)</h3>
+              <p class="text-gray-700 leading-relaxed mb-4">
+                Pengelolaan keuangan negara adalah urusan yang sangat krusial. Parlemen memiliki peran sentral dalam mengesahkan anggaran negara (APBN) untuk memastikan bahwa alokasi dana sesuai dengan prioritas nasional dan kepentingan rakyat. Tanpa parlemen, pengelolaan anggaran menjadi tidak terkontrol.
+              </p>
+
+              <div class="bg-red-100 border border-red-200 p-6 rounded-lg mb-6">
+                <h4 class="font-semibold mb-3 text-red-800">Risiko Korupsi, Kolusi, dan Nepotisme</h4>
+                <p class="text-red-700 text-sm">
+                  Dengan kendali penuh atas anggaran, presiden dan para menterinya dapat dengan mudah mengalokasikan dana untuk proyek-proyek yang tidak jelas manfaatnya, atau bahkan untuk kepentingan pribadi, keluarga, atau kroninya. Sejarah Orde Baru penuh dengan contoh bagaimana posisi-posisi kekuasaan dan kekayaan didistribusikan di antara keluarga dan teman-teman dekat Soeharto.
+                  <a href="https://www.geopoliticalmonitor.com/indonesia-in-the-shadow-of-suhartos-legacy-4685/" class="citation-link" target="_blank">[622]</a>
+                </p>
+              </div>
+            </div>
+
+            <div>
+              <h3 class="serif text-2xl font-semibold mb-6 text-gray-800">Fungsi Pengawasan</h3>
+              <p class="text-gray-700 leading-relaxed mb-4">
+                Pengawasan terhadap kinerja pemerintah adalah fungsi vital parlemen untuk menjamin akuntabilitas. Tanpa parlemen, mekanisme pengawasan formal terhadap eksekutif akan hilang, dan pemerintah akan bebas bertindak tanpa takut dikritik atau diminta pertanggungjawabannya.
+              </p>
+
+              <p class="text-gray-700 leading-relaxed">
+                Meskipun media dan masyarakat sipil dapat menjalankan fungsi kontrol sosial, namun peran mereka terbatas. Mereka tidak memiliki legitimasi hukum yang kuat untuk membatasi kebijakan pemerintah. Tanpa parlemen yang memiliki kewenangan hukum untuk menginvestigasi, memanggil pejabat, dan bahkan mengusulkan pemberhentian menteri, maka tekanan dari media dan masyarakat sipil sering kali tidak akan berdampak signifikan.
+                <a href="https://www.kompasiana.com/frans36286/68ac6d29c925c44fac578ed2/jika-dpr-bubar-apa-dampaknya-untuk-indonesia" class="citation-link" target="_blank">[615]</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Alternatives -->
+      <section id="alternatives" class="py-16 px-8 bg-gray-50">
+        <div class="max-w-4xl mx-auto">
+          <h2 class="serif text-3xl font-bold mb-12 text-gray-900">Alternatif Sistem Pemerintahan Tanpa Parlemen</h2>
+
+          <div class="space-y-12">
+            <div>
+              <h3 class="serif text-2xl font-semibold mb-6 text-gray-800">Sistem Demokrasi Langsung</h3>
+
+              <div class="grid md:grid-cols-2 gap-8 mb-6">
+                <div>
+                  <h4 class="font-semibold text-lg mb-3 text-gray-800">Model Referendum dan Inisiatif Rakyat</h4>
+                  <p class="text-gray-700 leading-relaxed mb-4">
+                    Dalam sistem ini, keputusan-keputusan penting, seperti pengesahan undang-undang atau anggaran, tidak diambil oleh parlemen, melainkan oleh seluruh warga negara melalui pemungutan suara. Model ini memang terdengar sangat demokratis karena memberikan kekuasaan langsung kepada rakyat.
+                  </p>
+                  <p class="text-gray-700 leading-relaxed">
+                    Namun, dalam praktiknya, model ini sangat sulit diimplementasikan, terutama di negara-negara yang besar dan beragam seperti Indonesia. Bayangkan jika setiap undang-undang harus diputuskan melalui referendum nasional. Proses ini akan sangat mahal, memakan waktu lama, dan rentan terhadap kekacauan.
+                  </p>
+                </div>
+                <div>
+                  <img src="https://kimi-web-img.moonshot.cn/img/upload.wikimedia.org/0b0ccbcfc139fcdc6fe55d323e3bac8454b3e495.jpg" alt="Proses referendum demokrasi langsung di Swiss" class="w-full h-48 object-cover rounded-lg" size="medium" aspect="wide" style="photo" query="Swiss direct democracy referendum" referrerpolicy="no-referrer" data-modified="1" data-score="0.00"/>
+                </div>
+              </div>
+
+              <div class="bg-blue-50 p-6 rounded-lg mb-6">
+                <h4 class="font-semibold text-lg mb-3 text-blue-800">Studi Kasus: Swiss</h4>
+                <p class="text-blue-700">
+                  Swiss adalah salah satu negara yang paling sukses menerapkan sistem demokrasi langsung. Di Swiss, rakyat memiliki hak untuk meminta referendum terhadap segala keputusan pemerintah. Namun, yang perlu digarisbawahi adalah bahwa Swiss tetap memiliki parlemen (Federal Assembly) yang berfungsi sebagai lembaga legislasi. Demokrasi langsung di Swiss dilakukan secara komplementer dengan demokrasi perwakilan, bukan sebagai pengganti sistem perwakilan.
+                  <a href="https://www.kompasiana.com/frans36286/68ac6d29c925c44fac578ed2/jika-dpr-bubar-apa-dampaknya-untuk-indonesia" class="citation-link" target="_blank">[292]</a>
+                </p>
+              </div>
+
+              <div class="bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded-r">
+                <p class="text-yellow-800">
+                  <strong>Keterbatasan:</strong> Pemilu di Indonesia tahun 2019 saja memerlukan anggaran yang mencapai 25 triliun rupiah. Jika setiap keputusan penting harus dilakukan melalui referendum, maka biaya yang dikeluarkan akan sangat besar dan tidak sebanding dengan manfaatnya.
+                </p>
+              </div>
+            </div>
+
+            <div>
+              <h3 class="serif text-2xl font-semibold mb-6 text-gray-800">Model Dewan-Dewan Lokal atau Komite Rakyat</h3>
+
+              <div class="bg-red-50 p-6 rounded-lg mb-6">
+                <h4 class="font-semibold text-lg mb-3 text-red-800">Studi Kasus: Sistem &#34;Jamahiriya&#34; di Libya</h4>
+                <p class="text-red-700">
+                  Muammar Gaddafi di Libya pernah mencoba model ini dengan sistem &#34;Jamahiriya&#34; (negara kaum massa). Dalam sistem ini, parlemen dihapuskan dan digantikan dengan sistem komite rakyat. Namun, hasilnya adalah kekuasaan tetap terkonsentrasi pada elit tertentu (yaitu Gaddafi dan kelompoknya) dan rakyat tidak benar-benar memiliki suara.
+                  <a href="https://www.kompasiana.com/frans36286/68ac6d29c925c44fac578ed2/jika-dpr-bubar-apa-dampaknya-untuk-indonesia" class="citation-link" target="_blank">[615]</a>
+                </p>
+              </div>
+
+              <p class="text-gray-700 leading-relaxed mb-6">
+                Kegagalan model Libya menunjukkan bahwa teori di balik sistem dewan-dewan lokal sering kali tidak sesuai dengan praktiknya. Tanpa mekanisme demokrasi yang kuat dan independen, sistem ini mudah disalahgunakan oleh elit untuk mengkonsolidasikan kekuasaan. Alih-alih memberdayakan rakyat, sistem ini justru dapat menciptakan birokrasi yang lebih kompleks dan rentan terhadap korupsi di setiap tingkatannya.
+              </p>
+            </div>
+
+            <div>
+              <h3 class="serif text-2xl font-semibold mb-6 text-gray-800">Sistem Partai Tunggal</h3>
+
+              <div class="pull-quote">
+                &#34;Soeharto dengan kekuasaannya yang luar biasa besar bisa mengatur semua lembaga negara untuk &#39;manut&#39; atau tunduk pada kehendaknya.&#34;
+                <cite class="block mt-2 text-sm font-normal">— Pengamat politik tentang era Orde Baru</cite>
+              </div>
+
+              <p class="text-gray-700 leading-relaxed mb-6">
+                Alternatif yang paling sering terjadi dalam praktik ketika parlemen dihilangkan atau dilemahkan adalah sistem partai tunggal, di mana satu partai politik mendominasi seluruh sistem pemerintahan. Era Orde Baru di bawah kepemimpinan Soeharto adalah contoh klasik dari sistem ini. Meskipun secara formal ada tiga partai (Golkar, PPP, dan PDI), namun dalam praktiknya Golkar mendominasi parlemen secara mutlak.
+                <a href="https://library.fes.de/pdf-files/iez/01361004.pdf" class="citation-link" target="_blank">[616]</a>
+              </p>
+
+              <div class="bg-gray-100 p-6 rounded-lg">
+                <h4 class="font-semibold text-lg mb-3 text-gray-800">DPR sebagai &#34;Rubber Stamp&#34;</h4>
+                <p class="text-gray-700">
+                  Dalam sistem partai tunggal, parlemen tidak berfungsi sebagai lembaga yang independen. Sebaliknya, parlemen hanya menjadi &#34;rubber stamp&#34; atau stempel karet untuk setiap kebijakan yang diinginkan oleh eksekutif. Parlemen tidak memiliki kekuatan untuk menolak atau merevisi RUU yang diajukan oleh presiden. Fungsinya hanyalah untuk memberikan legitimasi formal pada keputusan yang sudah diambil oleh presiden.
+                  <a href="https://www.cambridge.org/core/books/indonesian-parliament-and-democratization/rubber-stamp-the-role-of-the-parliament-during-the-last-year-of-the-presidency-of-suharto/1E661F2E0DCD6DDD725D2E3B3B47E5F2" class="citation-link" target="_blank">[621]</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Historical Lessons -->
+      <section id="historical-lessons" class="py-16 px-8 bg-white">
+        <div class="max-w-4xl mx-auto">
+          <h2 class="serif text-3xl font-bold mb-12 text-gray-900">Pelajaran dari Sejarah: Indonesia di Era Tanpa Parlemen Fungsional</h2>
+
+          <div class="mb-12">
+            <img src="https://kimi-web-img.moonshot.cn/img/upload.wikimedia.org/ede60783c476a44ed9f533e9aaceabed756ea5a1.jpg" alt="Soeharto during New Order era" class="w-full h-64 object-cover rounded-lg mb-8" size="medium" aspect="wide" style="photo" query="Soeharto era Orde Baru" referrerpolicy="no-referrer" data-modified="1" data-score="0.00"/>
+          </div>
+
+          <div class="overflow-x-auto mb-12">
+            <table class="w-full bg-white border border-gray-200 rounded-lg shadow-sm">
+              <thead class="bg-gray-50">
+                <tr>
+                  <th class="px-6 py-4 text-left text-sm font-semibold text-gray-900 border-b">Aspek</th>
+                  <th class="px-6 py-4 text-left text-sm font-semibold text-gray-900 border-b">Masa Demokrasi Terpimpin (1957-1965)</th>
+                  <th class="px-6 py-4 text-left text-sm font-semibold text-gray-900 border-b">Masa Orde Baru (1966-1998)</th>
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-gray-200">
+                <tr>
+                  <td class="px-6 py-4 text-sm font-medium text-gray-900">Status Parlemen</td>
+                  <td class="px-6 py-4 text-sm text-gray-700">Dibubarkan dan digantikan dengan lembaga yang anggotanya ditunjuk (DPR-GR, MPRS)</td>
+                  <td class="px-6 py-4 text-sm text-gray-700">Tetap ada secara formal, tetapi dikuasai sepenuhnya oleh satu partai (Golkar)</td>
+                </tr>
+                <tr>
+                  <td class="px-6 py-4 text-sm font-medium text-gray-900">Kekuasaan Presiden</td>
+                  <td class="px-6 py-4 text-sm text-gray-700">Sangat kuat dan tidak terbatas, mendapat mandat seumur hidup dari MPRS</td>
+                  <td class="px-6 py-4 text-sm text-gray-700">Absolut, mengontrol seluruh lembaga negara termasuk parlemen dan yudikatif</td>
+                </tr>
+                <tr>
+                  <td class="px-6 py-4 text-sm font-medium text-gray-900">Peran Parlemen</td>
+                  <td class="px-6 py-4 text-sm text-gray-700">Hanya sebagai alat legitimasi bagi kebijakan presiden, tanpa fungsi pengawasan</td>
+                  <td class="px-6 py-4 text-sm text-gray-700">Sebagai &#34;rubber stamp&#34; atau stempel karet untuk menyetujui segala kebijakan presiden</td>
+                </tr>
+                <tr>
+                  <td class="px-6 py-4 text-sm font-medium text-gray-900">Pemilu</td>
+                  <td class="px-6 py-4 text-sm text-gray-700">Tidak ada pemilu selama periode ini</td>
+                  <td class="px-6 py-4 text-sm text-gray-700">Ada, tetapi dijadikan alat untuk melegitimasi rezim, bukan untuk memilih wakil rakyat yang independen</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="space-y-12">
+            <div>
+              <h3 class="serif text-2xl font-semibold mb-6 text-gray-800">Masa Demokrasi Terpimpin (1957-1965)</h3>
+
+              <p class="text-gray-700 leading-relaxed mb-6">
+                Masa Demokrasi Terpimpin di bawah Presiden Soekarno ditandai dengan berakhirnya sistem demokrasi parlementer dan konsolidasi kekuasaan di tangan presiden. Setelah pemilu demokratis tahun 1955, Indonesia mengalami krisis politik kronis yang ditandai oleh ketidakstabilan kabinet dan perdebatan sengit antar partai. Didukung oleh militer, Soekarno memberlakukan hukum darurat pada tahun 1957 dan akhirnya membubarkan parlemen yang terpilih secara demokratis tersebut.
+                <a href="https://library.fes.de/pdf-files/iez/01361004.pdf" class="citation-link" target="_blank">[603]</a>
+              </p>
+
+              <div class="bg-red-50 p-6 rounded-lg mb-6">
+                <h4 class="font-semibold text-lg mb-3 text-red-800">Pembekuan DPR dan Konsolidasi Kekuasaan</h4>
+                <p class="text-red-700">
+                  Pada tahun 1960, Soekarno secara resmi membekukan DPR yang ada karena menolak untuk mengesahkan anggaran negara. Dengan hilangnya parlemen yang mandiri, kekuasaan Soekarno menjadi sangat kuat. Pada tahun 1963, MPRS bahkan memberikan mandat seumur hidup kepada Soekarno sebagai presiden, sebuah tindakan yang jelas melanggar konstitusi.
+                  <a href="https://library.fes.de/pdf-files/iez/01361004.pdf" class="citation-link" target="_blank">[634]</a>
+                </p>
+              </div>
+            </div>
+
+            <div>
+              <h3 class="serif text-2xl font-semibold mb-6 text-gray-800">Masa Orde Baru (1966-1998)</h3>
+
+              <p class="text-gray-700 leading-relaxed mb-6">
+                Era Orde Baru di bawah Presiden Soeharto adalah contoh klasik dari sistem di mana parlemen secara formal ada, tetapi secara fungsional tidak berfungsi sebagai lembaga pengawas dan penyeimbang. Meskipun secara formal ada tiga partai politik (Golkar, PPP, dan PDI), namun dalam praktiknya Golkar mendominasi parlemen secara mutlak.
+                <a href="https://library.fes.de/pdf-files/iez/01361004.pdf" class="citation-link" target="_blank">[616]</a>
+              </p>
+
+              <div class="bg-gray-100 p-6 rounded-lg mb-6">
+                <h4 class="font-semibold text-lg mb-3 text-gray-800">Kontrol Total terhadap Lembaga Negara</h4>
+                <p class="text-gray-700">
+                  Soeharto memiliki kontrol penuh atas partai-partai politik, termasuk dalam menentukan ketua umum partai, baik di tingkat pusat maupun daerah. Anggota DPR dari Golkar sebagian besar adalah pegawai negeri, yang membuat mereka sangat tergantung pada kehendak pemerintah. Dalam sistem ini, parlemen (DPR) tidak berfungsi sebagai lembaga pengawas dan penyeimbang kekuasaan, melainkan hanya sebagai alat legitimasi bagi kebijakan Soeharto.
+                </p>
+              </div>
+            </div>
+
+            <div>
+              <h3 class="serif text-2xl font-semibold mb-6 text-gray-800">Masa Reformasi (1998-Sekarang)</h3>
+
+              <p class="text-gray-700 leading-relaxed mb-6">
+                Jatuhnya Soeharto pada tahun 1998 menandak dimulainya era Reformasi, yang ditandai oleh upaya untuk membangun kembali sistem demokrasi dan memperkuat peran lembaga-lembaga negara, termasuk parlemen. Salah satu tonggak penting dalam era Reformasi adalah perubahan konstitusi. Amandemen UUD 1945 dilakukan untuk memperkuat sistem checks and balances.
+              </p>
+
+              <div class="bg-green-50 p-6 rounded-lg">
+                <h4 class="font-semibold text-lg mb-3 text-green-800">Tantangan Membangun Parlemen Efektif</h4>
+                <p class="text-green-700">
+                  Meskipun telah mengalami reformasi, DPR masih menghadapi banyak tantangan. Masalah seperti korupsi, kualitas anggota yang tidak merata, dan masih lemahnya fungsi pengawasan masih sering menjadi sorotan publik. Membangun parlemen yang benar-benar efektif, representatif, dan bersih bukanlah proses yang instan.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="py-12 px-8 bg-gray-900 text-white">
+        <div class="max-w-4xl mx-auto text-center">
+          <p class="text-gray-400 mb-4">
+            Analisis ini didasarkan pada studi sejarah ketatanegaraan Indonesia dan prinsip-prinsip demokrasi konstitusional.
+          </p>
+          <div class="text-sm text-gray-500">
+            Referensi utama:
+            <a href="https://www.kompasiana.com/frans36286/68ac6d29c925c44fac578ed2/jika-dpr-bubar-apa-dampaknya-untuk-indonesia" class="citation-link text-gray-400" target="_blank">Kompasiana</a>,
+            <a href="https://www.kompas.id/artikel/en-mungkinkah-negara-tanpa-dpr" class="citation-link text-gray-400" target="_blank">Kompas.id</a>,
+            <a href="https://library.fes.de/pdf-files/iez/01361004.pdf" class="citation-link text-gray-400" target="_blank">FES Library</a>
+          </div>
+        </div>
+      </footer>
+    </main>
+
+    <script>
+        // Toggle TOC on mobile
+        const tocToggle = document.getElementById('toc-toggle');
+        const tocFixed = document.querySelector('.toc-fixed');
+        
+        tocToggle.addEventListener('click', () => {
+            tocFixed.classList.toggle('open');
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Close mobile TOC when clicking outside
+        document.addEventListener('click', function(event) {
+            if (window.innerWidth <= 1024) {
+                const isToc = tocFixed.contains(event.target);
+                const isToggle = tocToggle.contains(event.target);
+                
+                if (!isToc && !isToggle && tocFixed.classList.contains('open')) {
+                    tocFixed.classList.remove('open');
+                }
+            }
+        });
+
+        // Handle window resize
+        window.addEventListener('resize', function() {
+            if (window.innerWidth > 1024) {
+                // Reset state when switching to desktop
+                tocFixed.classList.remove('open');
+            }
+        });
+    </script>
+  
+
+</body></html>
