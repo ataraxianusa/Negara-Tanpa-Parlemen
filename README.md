@@ -32,3 +32,9 @@ open index.html
 # Contoh jika menggunakan Windows
 start index.html
 ```
+
+## Live Demo
+
+Laman ini juga dapat diakses secara langsung melalui GitHub Pages pada tautan berikut:
+
+[https://ataraxianusa.github.io/Negara-Tanpa-Parlemen/](https://ataraxianusa.github.io/Negara-Tanpa-Parlemen/)
