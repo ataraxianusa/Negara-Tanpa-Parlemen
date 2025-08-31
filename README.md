@@ -37,4 +37,4 @@ start index.html
 
 Laman ini juga dapat diakses secara langsung melalui GitHub Pages pada tautan berikut:
 
-[https://ataraxianusa.github.io/Negara-Tanpa-Parlemen/](https://ataraxianusa.github.io/Negara-Tanpa-Parlemen/)
+<a href="https://ataraxianusa.github.io/Negara-Tanpa-Parlemen/" target="_blank">https://ataraxianusa.github.io/Negara-Tanpa-Parlemen/</a>
